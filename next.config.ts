@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    // LINEのWebhookからのPOSTリクエストを許可する
+    async headers() {
+        return [
+            {
+                source: '/api/webhook',
+                headers: [
+                    {
+                        key: 'Content-Type',
+                        value: 'application/json',
+                    },
+                ],
+            },
+        ]
+    },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = nextConfig

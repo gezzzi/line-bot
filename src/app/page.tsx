@@ -7,14 +7,13 @@ export default function Home() {
           このボットはLINEアプリ上で動作します。
         </p>
         <p className="text-gray-600 dark:text-gray-300 mt-2">
-          LINEの友達登録はこちらから：
-          <a 
+          <a
             href="https://line.me/R/ti/p/@025hxdqc"
             className="text-blue-500 hover:text-blue-600 underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://line.me/R/ti/p/@025hxdqc
+            LINEの友達登録はこちらから
           </a>
         </p>
       </div>
